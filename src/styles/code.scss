@@ -1,0 +1,28 @@
+@import "variables";
+.line-numbers .line-numbers-rows {
+  top: 1.5em !important;
+  left: 20px !important;
+  font-size: ($code-line-height / 2);
+  span {
+    height: $code-line-height;
+    line-height: $code-line-height;
+  }
+}
+code[class*="language-"],
+pre[class*="language-"] {
+  border: none !important;
+  background: $dark;
+  text-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+.language-text {
+  background: $gray-200 !important;
+  color: darken($blue, 20%) !important;
+  text-shadow: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  &::selection {
+    color: lighten($blue, 20%) !important;
+  }
+}

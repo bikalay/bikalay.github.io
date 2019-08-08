@@ -1,0 +1,9 @@
+@import '../../styles/variables';
+.no-footer {
+  position: relative;
+  min-height: 100%;
+  padding-bottom: $spacer*3;
+}
+footer {
+  margin-top: -$spacer*3;
+}
