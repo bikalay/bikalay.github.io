@@ -11,7 +11,7 @@ export function PostCard({ post, size }) {
       <span>{date}</span>
       <p>{summary}</p>
       <ul>
-        {tags && tags.map(tag => <li key={tag}>#{tag}</li>)}
+        {tags && tags.map(tag => <li key={tag}><Link to={'/tags/'+tag}>#{tag}</Link></li>)}
       </ul>
     </article>
   )

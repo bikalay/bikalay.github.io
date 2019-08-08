@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, Link, useStaticQuery } from "gatsby"
 
 export function TagsWidget({}) {
   const data = useStaticQuery(graphql`
@@ -12,9 +12,9 @@ export function TagsWidget({}) {
   const tags = data.allMarkdownRemark.distinct;
   return (
     <div className="card p-3">
-      <h4>Темы</h4>
+      <h4>Тэги</h4>
       <ul>
-        {tags.map(tag => <li><a>{tag}</a></li>)}
+        {tags.map(tag => <li><Link to={'/tags/'+tag}>#{tag}</Link></li>)}
       </ul>
     </div>
   )
