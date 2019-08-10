@@ -9,8 +9,8 @@ featured: ui-and-code.png
 summary: "Пример настройки webpack для комфортной верстки страничек c использованием bootstrap"
 type: "article"
 ---
-#Настраиваем Webpack для верстки с Bootstrap 4 (Пошаговая инструкция)
-##1. Создаем проект
+# Настраиваем Webpack для верстки с Bootstrap 4 (Пошаговая инструкция)
+## 1. Создаем проект
 Первым делом создадим папку для нашего проекта и перейдем в нее
 ```shell script
 mldir site
@@ -39,7 +39,7 @@ npm init
   "license": "MIT"
 }
 ```
-##2. Подключаем Webpack
+## 2. Подключаем Webpack
 
 Для начала устанавливаем ```webpack```
 ```shell script
@@ -79,7 +79,7 @@ webpack init
 
 После этого ```webpack``` создаст нам свой файл конфигурации ```webpack.config.js``` и установит необходимые модули
 
-##2. Создаем структуру проекта
+## 2. Создаем структуру проекта
 
 Создадим папку ```src``` для нашего кода. и в ней папки ```img```,
 ```style```, ```pages```, ```components``` 
@@ -128,7 +128,7 @@ echo '<!doctype html>
 └── webpack.config.js    - файл настроек Webpack
 ```
 
-##3. Устанавливаем дополнительные модули для Webpack
+## 3. Устанавливаем дополнительные модули для Webpack
 
 Нам потребуются лоадеры: ```file-loader```, ```html-loader```
 ```shell script
@@ -139,7 +139,7 @@ npm install file-loader html-loader --save-dev
 npm install clean-webpack-plugin html-webpack-plugin --save-dev
 ```
 
-##4. Настраиваем webpack
+## 4. Настраиваем webpack
 
 Открываем файл ```webpack.config.js``` в вашем любимом редакторе.
 Находим в файле секцию ```rules```
