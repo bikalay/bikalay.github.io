@@ -1,0 +1,47 @@
+{
+  "name": "bikalay.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build-styles | npm run build-js",
+    "build-styles": "node-sass _sass/main.scss -o css | csso css/main.css -o css/main.min.css",
+    "build-js": "browserify _js/index.js -o js/index.js -t [ babelify --presets [ @babel/preset-env ] --plugins [ babel-plugin-syntax-dynamic-import ] ] | uglifyjs js/index.js -o js/index.min.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bikalay/bikalay.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bikalay/bikalay.github.io/issues"
+  },
+  "homepage": "https://github.com/bikalay/bikalay.github.io#readme",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.1",
+    "uglify-js": "^3.8.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babelify": "^10.0.0",
+    "browserify": "^16.5.0",
+    "csso-cli": "^3.0.0",
+    "node-sass": "^4.13.1"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ],
+    "plugins": [
+      "babel-plugin-syntax-dynamic-import"
+    ]
+  }
+}
