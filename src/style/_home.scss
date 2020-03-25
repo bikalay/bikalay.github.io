@@ -1,0 +1,24 @@
+.home-header-section {
+  display: flex;
+  justify-content: center;
+}
+
+.home-header-wrapper {
+  background-color: $primary;
+}
+
+.home-header-inner {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.home-header-image {
+  width: 200px;
+  height: 200px;
+  margin: 10px auto;
+  position: relative;
+  .gatsby-image-wrapper {
+    border-radius: 50%;
+    overflow: hidden;
+  }
+}

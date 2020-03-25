@@ -1,0 +1,28 @@
+.icons-wrapper {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  color: white;
+}
+.tech-icon {
+  position: absolute;
+  color: $white;
+  top: -15px;
+  left: -15px;
+  font-size: 26px;
+}
+
+@for $i from 0 through 22 {
+  @keyframes orbit#{16*$i} {
+    from { transform: rotate(#{360/22*$i}deg) translateX(-150px) rotate(-#{360/22*$i}deg);}
+    to   { transform: rotate(#{(360/22*$i)+360}deg) translateX(-150px) rotate(-#{360+((360/22)*$i)}deg); }
+
+  }
+  .deg#{16*$i} {
+    transform: rotate(#{360/22*$i}deg) translateX(-150px) rotate(-#{360/22*$i}deg);
+    animation: orbit#{16*$i} 30s linear infinite;
+  }
+
+}

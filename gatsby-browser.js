@@ -5,3 +5,7 @@
  */
 
 // You can delete this file if you're not using it
+
+window.jQuery = window.$ = require('jquery');
+require('bootstrap');
+require('./src/style/main.scss');
