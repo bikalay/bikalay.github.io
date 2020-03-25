@@ -2,7 +2,18 @@
 @import "~bootstrap/scss/mixins";
 @import "~bootstrap/scss/variables";
 
-$primary: #353353;//#1C63FB;
+$body-color: #5E5C7F;
+$body-bg:#f9f9ff;
 
+$primary: #353353;
+$yellow: #FFD15C;
+$red: #FF4C60;
+$blue: #6C6CE5;
+$blue-light: #aecce6;
+$aqua: #44D7B6;
+$danger: $red;
 $theme-colors: ();
+
+$btn-border-radius: 20px;
+$btn-padding-x: 20px
 
