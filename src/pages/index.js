@@ -84,7 +84,7 @@ const IndexPage = () => (
       </section>
     </div>
       <section className="container home-about-me-section">
-        <h2 className="text-center text-md-left">About Me</h2>
+        <h2 className="text-center text-md-left mb-4 mb-md-2">About Me</h2>
         <hr className="ml-0 d-none d-md-block mb-5" />
         <div className="row">
           <div className="col-12 col-md-2 mb-4 text-center text-md-left">
