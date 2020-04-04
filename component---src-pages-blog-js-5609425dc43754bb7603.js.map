@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/pages/blog.js"],"names":["data"],"mappings":"2FAAA,iBAEe,sBAAY,EAAVA","file":"component---src-pages-blog-js-5609425dc43754bb7603.js","sourcesContent":["import React from \"react\"\n\nexport default ({data}) => {\n  return\n\n}\n"],"sourceRoot":""}
