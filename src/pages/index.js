@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/common/seo"
 import { Image } from "../components/common/image"
-import Header from "../components/header"
+import { Header } from "../components/header"
 import {
   FaAndroid,
   FaAngular,
@@ -29,9 +29,10 @@ import {
   FaLinkedin,
   FaGithubSquare,
   FaGooglePlusSquare,
-  FaSkype,
-  FaInstagram
+  FaCodepen,
 } from "react-icons/fa"
+import { graphql, Link } from "gatsby"
+import { Articles } from "../components/articles-list-block"
 
 const IndexPage = () => (
   <Layout>
@@ -68,7 +69,7 @@ const IndexPage = () => (
             </div>
           </div>
           <div className="home-header-content">
-             <h1>
+            <h1>
               Alexander Vovchuk
             </h1>
             <hr/>
@@ -76,40 +77,46 @@ const IndexPage = () => (
               <a href="https://www.linkedin.com/in/alexandr-vovchuk-0a858158"><FaLinkedin/></a>
               <a href="mailto:a.vovchuk@gmail.com"><FaGooglePlusSquare/></a>
               <a href="https://github.com/bikalay"><FaGithubSquare/></a>
-              <a href="skype:a_vovchuk?chat"><FaSkype/></a>
+              <a href="https://codepen.io/bikalay"><FaCodepen/></a>
             </p>
             <p>Hi everyone and welcome to my personal Website!</p>
           </div>
         </div>
       </section>
     </div>
-      <section className="container home-about-me-section">
-        <h2 className="text-center text-md-left mb-4 mb-md-2">About Me</h2>
-        <hr className="ml-0 d-none d-md-block mb-5" />
-        <div className="row">
-          <div className="col-12 col-md-2 mb-4 text-center text-md-left">
-            <div className="d-inline-block">
-            <Image src="avatar.jpg" alt="user avatar" className="mx-auto"/>
-            </div>
+    <section className="container home-about-me-section">
+      <h2 className="text-center text-md-left mb-4 mb-md-2">Last Posts</h2>
+      <hr className="ml-0 d-none d-md-block mb-5" />
+      <Articles lang="en" limit={3}/>
+      <Link to="/blog" >Read More</Link>
+    </section>
+    <section className="container home-about-me-section">
+      <h2 className="text-center text-md-left mb-4 mb-md-2">About Me</h2>
+      <hr className="ml-0 d-none d-md-block mb-5"/>
+      <div className="row">
+        <div className="col-12 col-md-2 mb-4 text-center text-md-left">
+          <div className="d-inline-block">
+            <Image src="avatar.jpg" alt="user avatar" className="about-me-image mx-auto shadow-sm"/>
           </div>
-          <div className="col-12 col-md-10">
-            <div className="card">
-              <div className="card-body">
-                <p>
+        </div>
+        <div className="col-12 col-md-10">
+          <div className="card shadow-sm">
+            <div className="card-body">
+              <p>
                 I am Alexander Vovchuk, software engineer from Russia.
                 I live in small siberian city of Akademgorodok.
                 I work in software development more than 10 years.
                 I have rich experience in web and mobile development.
                 I can work with frontend and backend technologies.
-                </p>
-                <div className="text-center text-md-left">
+              </p>
+              <div className="text-center text-md-left">
                 <a className="btn btn-danger text-light font-weight-bold">Download CV</a>
-                </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
   </Layout>
 )
 

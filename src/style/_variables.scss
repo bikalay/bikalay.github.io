@@ -12,8 +12,12 @@ $blue: #6C6CE5;
 $blue-light: #aecce6;
 $aqua: #44D7B6;
 $danger: $red;
+
+$info: $blue;
 $theme-colors: ();
 
+$link-color: $red;
+$link-hover-color: darken($red, 20);
 $btn-border-radius: 20px;
 $btn-padding-x: 20px
 

@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql, StaticQuery } from 'gatsby'
 import Img from 'gatsby-image';
 
-export function Image ({src, alt}) {
+export function Image ({src, alt, className}) {
   if (!src) {
     return alt ? <span>{alt}</span> : null;
   }
@@ -23,7 +23,7 @@ export function Image ({src, alt}) {
         `}
       render={data => {
         return (
-          <Img alt={alt} fluid={data.allImageSharp.edges.find((element) => {
+          <Img alt={alt} className={className} fluid={data.allImageSharp.edges.find((element) => {
             return (element.node.fluid.src.split('/').pop() === src);
           }).node.fluid} />
         )

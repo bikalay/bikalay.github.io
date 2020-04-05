@@ -1,0 +1,12 @@
+.article-category {
+  position: absolute;
+  top: -2px;
+  left: 10px;
+  border-radius: 0 0 $border-radius-lg $border-radius-lg;
+}
+.articles-previews {
+  .card-img-top {
+    background-color: $yellow;
+    height: 200px;
+  }
+}
