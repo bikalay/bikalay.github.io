@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./src/pages/blog.ru.js"],"names":[],"mappings":"2FAAA,gCAEe,qBACb,OAAO","file":"component---src-pages-blog-ru-js-d811aed93fb31c1a6ce5.js","sourcesContent":["import React from \"react\"\n\nexport default () => {\n  return <h1>Блог</h1>\n}\n"],"sourceRoot":""}

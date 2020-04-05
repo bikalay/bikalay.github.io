@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{UKrx:function(a,e,n){"use strict";n.r(e);var t=n("Bl7J"),r=n("LbRr"),c=n("cyVc"),l=n("q1tI"),s=n.n(l);e.default=function(a){a.data;return s.a.createElement(t.a,null,s.a.createElement(r.a,{lang:"ru",className:"bg-primary navbar-dark"}),s.a.createElement("section",{className:"container"},s.a.createElement("h1",null,"Блог"),s.a.createElement(c.a,{lang:"ru"})))}}}]);
+//# sourceMappingURL=component---src-pages-blog-index-ru-js-18f3459d6a8f7c953afd.js.map

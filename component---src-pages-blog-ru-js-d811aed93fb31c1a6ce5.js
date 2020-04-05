@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{FW4L:function(n,e,t){"use strict";t.r(e);var u=t("q1tI"),a=t.n(u);e.default=function(){return a.a.createElement("h1",null,"Блог")}}}]);
-//# sourceMappingURL=component---src-pages-blog-ru-js-d811aed93fb31c1a6ce5.js.map
