@@ -36,48 +36,54 @@ import { Articles } from "../components/articles-list-block"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home"/>
+    <SEO title="Home" />
     <div className="home-header-wrapper">
-      <Header/>
+      <Header />
       <section className="home-header-section">
         <div className="home-header-inner">
           <div className="home-header-image">
-            <Image src="avatar.jpg" alt="user avatar"/>
+            <Image src="avatar.jpg" alt="user avatar" />
             <div className="icons-wrapper">
-              <FaAndroid className="tech-icon deg0"/>
-              <FaAngular className="tech-icon deg16"/>
-              <FaBootstrap className="tech-icon deg32"/>
-              <FaCss3Alt className="tech-icon deg48"/>
-              <FaDocker className="tech-icon deg64"/>
-              <FaAws className="tech-icon deg80"/>
-              <FaGitAlt className="tech-icon deg96"/>
-              <FaGrunt className="tech-icon deg112"/>
-              <FaGulp className="tech-icon deg128"/>
-              <FaHtml5 className="tech-icon deg144"/>
-              <FaJava className="tech-icon deg160"/>
-              <FaJenkins className="tech-icon deg176"/>
-              <FaJira className="tech-icon deg192"/>
-              <FaJsSquare className="tech-icon deg208"/>
-              <FaNodeJs className="tech-icon deg224"/>
-              <FaNpm className="tech-icon deg240"/>
-              <FaPhp className="tech-icon deg256"/>
-              <FaReact className="tech-icon deg272"/>
-              <FaSass className="tech-icon deg288"/>
-              <FaVuejs className="tech-icon deg304"/>
-              <FaLess className="tech-icon deg320"/>
-              <FaApple className="tech-icon deg336"/>
+              <FaAndroid className="tech-icon deg0" />
+              <FaAngular className="tech-icon deg16" />
+              <FaBootstrap className="tech-icon deg32" />
+              <FaCss3Alt className="tech-icon deg48" />
+              <FaDocker className="tech-icon deg64" />
+              <FaAws className="tech-icon deg80" />
+              <FaGitAlt className="tech-icon deg96" />
+              <FaGrunt className="tech-icon deg112" />
+              <FaGulp className="tech-icon deg128" />
+              <FaHtml5 className="tech-icon deg144" />
+              <FaJava className="tech-icon deg160" />
+              <FaJenkins className="tech-icon deg176" />
+              <FaJira className="tech-icon deg192" />
+              <FaJsSquare className="tech-icon deg208" />
+              <FaNodeJs className="tech-icon deg224" />
+              <FaNpm className="tech-icon deg240" />
+              <FaPhp className="tech-icon deg256" />
+              <FaReact className="tech-icon deg272" />
+              <FaSass className="tech-icon deg288" />
+              <FaVuejs className="tech-icon deg304" />
+              <FaLess className="tech-icon deg320" />
+              <FaApple className="tech-icon deg336" />
             </div>
           </div>
           <div className="home-header-content">
-            <h1>
-              Alexander Vovchuk
-            </h1>
-            <hr/>
+            <h1>Alexander Vovchuk</h1>
+            <hr />
             <p className="home-header-content-icons">
-              <a href="https://www.linkedin.com/in/alexandr-vovchuk-0a858158"><FaLinkedin/></a>
-              <a href="mailto:a.vovchuk@gmail.com"><FaGooglePlusSquare/></a>
-              <a href="https://github.com/bikalay"><FaGithubSquare/></a>
-              <a href="https://codepen.io/bikalay"><FaCodepen/></a>
+              <a href="https://www.linkedin.com/in/alexandr-vovchuk-0a858158">
+                <FaLinkedin />
+              </a>
+              <a href="mailto:a.vovchuk@gmail.com">
+                <FaGooglePlusSquare />
+              </a>
+              <a href="https://github.com/bikalay">
+                <FaGithubSquare />
+              </a>
+              <a href="https://codepen.io/bikalay">
+                <FaCodepen />
+              </a>
             </p>
             <p>Hi everyone and welcome to my personal Website!</p>
           </div>
@@ -87,30 +93,36 @@ const IndexPage = () => (
     <section className="container home-about-me-section">
       <h2 className="text-center text-md-left mb-4 mb-md-2">Last Posts</h2>
       <hr className="ml-0 d-none d-md-block mb-5" />
-      <Articles lang="en" limit={3}/>
-      <Link to="/blog" >Read More</Link>
+      <Articles lang="en" limit={3} />
+      <Link to="/blog">Read More</Link>
     </section>
     <section className="container home-about-me-section">
       <h2 className="text-center text-md-left mb-4 mb-md-2">About Me</h2>
-      <hr className="ml-0 d-none d-md-block mb-5"/>
+      <hr className="ml-0 d-none d-md-block mb-5" />
       <div className="row">
         <div className="col-12 col-md-2 mb-4 text-center text-md-left">
           <div className="d-inline-block">
-            <Image src="avatar.jpg" alt="user avatar" className="about-me-image mx-auto shadow-sm"/>
+            <Image
+              src="avatar.jpg"
+              alt="user avatar"
+              className="about-me-image mx-auto shadow-sm"
+            />
           </div>
         </div>
         <div className="col-12 col-md-10">
           <div className="card shadow-sm">
             <div className="card-body">
               <p>
-                I am Alexander Vovchuk, software engineer from Russia.
-                I live in small siberian city of Akademgorodok.
-                I work in software development more than 10 years.
-                I have rich experience in web and mobile development.
-                I can work with frontend and backend technologies.
+                I am Alexander Vovchuk, software engineer from Russia. I live in
+                small siberian city of Akademgorodok. I work in software
+                development more than 10 years. I have rich experience in web
+                and mobile development. I can work with frontend and backend
+                technologies.
               </p>
               <div className="text-center text-md-left">
-                <a className="btn btn-danger text-light font-weight-bold">Download CV</a>
+                <a className="btn btn-danger text-light font-weight-bold">
+                  Download CV
+                </a>
               </div>
             </div>
           </div>
@@ -121,3 +133,6 @@ const IndexPage = () => (
 )
 
 export default IndexPage
+
+
+tesdjkf+6545 = :sdf
